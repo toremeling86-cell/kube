@@ -3,7 +3,7 @@
   "name": "Kube",
   "short_name": "Kube",
   "description": "En 3D-puslekube som svever over et tåkehav. Vri lagene direkte med fingeren.",
-  "lang": "no",
+  "lang": "nb",
   "start_url": "./",
   "scope": "./",
   "display": "fullscreen",
@@ -48,7 +48,7 @@
     {
       "name": "Stokk og løs",
       "short_name": "Stokk",
-      "description": "Åpne Kube med en nystokket kube",
+      "description": "Åpne Kube og stokk med en gang",
       "url": "./?stokk",
       "icons": [
         {
