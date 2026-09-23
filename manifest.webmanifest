@@ -84,5 +84,21 @@
         }
       ]
     }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/telefon.jpg",
+      "sizes": "411x915",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Kuben over skyene i gyllen time"
+    },
+    {
+      "src": "screenshots/bred.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Kube på en stor skjerm"
+    }
   ]
 }
