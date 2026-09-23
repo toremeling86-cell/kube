@@ -1,0 +1,88 @@
+{
+  "id": "./",
+  "name": "Kube",
+  "short_name": "Kube",
+  "description": "En 3D-puslekube som svever over et tåkehav. Vri lagene direkte med fingeren.",
+  "lang": "no",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
+  "orientation": "any",
+  "background_color": "#0b0b0c",
+  "theme_color": "#0b0b0c",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Stokk og løs",
+      "short_name": "Stokk",
+      "description": "Åpne Kube med en nystokket kube",
+      "url": "./?stokk",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Dagens kube",
+      "short_name": "Dagens",
+      "description": "Samme stokking for alle i dag",
+      "url": "./?dagens",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Rekorder",
+      "short_name": "Rekorder",
+      "description": "Se tidene og rekordene dine",
+      "url": "./?rekorder",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
