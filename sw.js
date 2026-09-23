@@ -1,10 +1,10 @@
-/* Kube – service worker, versjon 596c3227ed78 */
+/* Kube – service worker, versjon 58d63229bdc2 */
 const BASE = "/kube/";
 // Navnet inneholder stien, så flere apper på samme domene (for eksempel github.io) ikke rydder hverandres lager.
 const PREFIX = 'kube:' + BASE + ':';
-const CACHE = PREFIX + '596c3227ed78';
-const FILES = ["/kube/index.html","/kube/manifest.webmanifest","/kube/icons/icon-192.png","/kube/icons/icon-512.png","/kube/icons/maskable-192.png","/kube/icons/maskable-512.png","/kube/icons/apple-touch-icon.png","/kube/icons/favicon-32.png","/kube/assets/index-BagFvq3u.js","/kube/assets/index-DsTUPbZ3.css","/kube/assets/jetbrains-mono-latin-500-normal-BWZEU5yA.woff2","/kube/assets/jetbrains-mono-latin-ext-500-normal-Cut-4mMH.woff2","/kube/assets/react-BnOWHKxB.js","/kube/assets/rolldown-runtime-CbXtAM7H.js","/kube/assets/schibsted-grotesk-latin-400-normal-DPhJBilQ.woff2","/kube/assets/schibsted-grotesk-latin-500-normal-rf9C4Thp.woff2","/kube/assets/schibsted-grotesk-latin-700-normal-BkH0uJ1o.woff2","/kube/assets/schibsted-grotesk-latin-ext-400-normal-DHVTfbSM.woff2","/kube/assets/schibsted-grotesk-latin-ext-500-normal-Ch1izu81.woff2","/kube/assets/schibsted-grotesk-latin-ext-700-normal-o210KhU4.woff2","/kube/assets/scrambler.worker-UoTZYZdR.js","/kube/assets/terrain.worker-DowGO7GR.js","/kube/assets/three-DyhSy3uH.js"];
-const ENTRY = "/kube/assets/index-BagFvq3u.js";
+const CACHE = PREFIX + '58d63229bdc2';
+const FILES = ["/kube/index.html","/kube/manifest.webmanifest","/kube/icons/icon-192.png","/kube/icons/icon-512.png","/kube/icons/maskable-192.png","/kube/icons/maskable-512.png","/kube/icons/apple-touch-icon.png","/kube/icons/favicon-32.png","/kube/assets/index-DNm1hMgL.css","/kube/assets/index-qdtjXH6V.js","/kube/assets/jetbrains-mono-latin-500-normal-BWZEU5yA.woff2","/kube/assets/jetbrains-mono-latin-ext-500-normal-Cut-4mMH.woff2","/kube/assets/react-BnOWHKxB.js","/kube/assets/rolldown-runtime-CbXtAM7H.js","/kube/assets/schibsted-grotesk-latin-400-normal-DPhJBilQ.woff2","/kube/assets/schibsted-grotesk-latin-500-normal-rf9C4Thp.woff2","/kube/assets/schibsted-grotesk-latin-700-normal-BkH0uJ1o.woff2","/kube/assets/schibsted-grotesk-latin-ext-400-normal-DHVTfbSM.woff2","/kube/assets/schibsted-grotesk-latin-ext-500-normal-Ch1izu81.woff2","/kube/assets/schibsted-grotesk-latin-ext-700-normal-o210KhU4.woff2","/kube/assets/scrambler.worker-UoTZYZdR.js","/kube/assets/terrain.worker-DowGO7GR.js","/kube/assets/three-DyhSy3uH.js"];
+const ENTRY = "/kube/assets/index-qdtjXH6V.js";
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
