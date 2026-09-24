@@ -1,12 +1,12 @@
-/* Kube – service worker, versjon d968baad744a */
+/* Kube – service worker, versjon fdb978a5f862 */
 const BASE = "/kube/";
 // Navnet inneholder stien, så flere apper på samme domene (for eksempel github.io) ikke rydder hverandres lager.
 const PREFIX = 'kube:' + BASE + ':';
-const CACHE = PREFIX + 'd968baad744a';
-const FILES = ["/kube/index.html","/kube/manifest.webmanifest","/kube/icons/icon-192.png","/kube/icons/icon-512.png","/kube/icons/maskable-192.png","/kube/icons/maskable-512.png","/kube/icons/apple-touch-icon.png","/kube/icons/favicon-32.png","/kube/assets/index-CjGVeiZW.css","/kube/assets/index-jvJVXmuH.js","/kube/assets/jetbrains-mono-latin-500-normal-BWZEU5yA.woff2","/kube/assets/jetbrains-mono-latin-ext-500-normal-Cut-4mMH.woff2","/kube/assets/react-BnOWHKxB.js","/kube/assets/rolldown-runtime-CbXtAM7H.js","/kube/assets/schibsted-grotesk-latin-400-normal-DPhJBilQ.woff2","/kube/assets/schibsted-grotesk-latin-500-normal-rf9C4Thp.woff2","/kube/assets/schibsted-grotesk-latin-700-normal-BkH0uJ1o.woff2","/kube/assets/schibsted-grotesk-latin-ext-400-normal-DHVTfbSM.woff2","/kube/assets/schibsted-grotesk-latin-ext-500-normal-Ch1izu81.woff2","/kube/assets/schibsted-grotesk-latin-ext-700-normal-o210KhU4.woff2","/kube/assets/scrambler.worker-UoTZYZdR.js","/kube/assets/terrain.worker-DowGO7GR.js","/kube/assets/three-CkI5HWKS.js"];
+const CACHE = PREFIX + 'fdb978a5f862';
+const FILES = ["/kube/index.html","/kube/manifest.webmanifest","/kube/icons/icon-192.png","/kube/icons/icon-512.png","/kube/icons/maskable-192.png","/kube/icons/maskable-512.png","/kube/icons/apple-touch-icon.png","/kube/icons/favicon-32.png","/kube/assets/index-CbFgt51F.css","/kube/assets/index-CUA_AVvL.js","/kube/assets/jetbrains-mono-latin-500-normal-BWZEU5yA.woff2","/kube/assets/jetbrains-mono-latin-ext-500-normal-Cut-4mMH.woff2","/kube/assets/react-BnOWHKxB.js","/kube/assets/rolldown-runtime-CbXtAM7H.js","/kube/assets/schibsted-grotesk-latin-500-normal-rf9C4Thp.woff2","/kube/assets/schibsted-grotesk-latin-600-normal-Czv9Obfv.woff2","/kube/assets/schibsted-grotesk-latin-700-normal-BkH0uJ1o.woff2","/kube/assets/schibsted-grotesk-latin-800-normal-CIaq-TR1.woff2","/kube/assets/schibsted-grotesk-latin-ext-500-normal-Ch1izu81.woff2","/kube/assets/schibsted-grotesk-latin-ext-600-normal-C5pQPdUJ.woff2","/kube/assets/schibsted-grotesk-latin-ext-700-normal-o210KhU4.woff2","/kube/assets/schibsted-grotesk-latin-ext-800-normal-CZWJQj-F.woff2","/kube/assets/scrambler.worker-UoTZYZdR.js","/kube/assets/terrain.worker-DowGO7GR.js","/kube/assets/three-B61cTBjc.js","/kube/assets/tid-day-CqNj3q3J.png","/kube/assets/tid-golden-DsFR0DS1.png","/kube/assets/tid-night-DvYxIBrg.png","/kube/assets/tid-sunrise-BXS5ctT_.png"];
 // Sidene i bygget som ikke er appen (for eksempel personvern.html eller lisenser.txt), som stier i adressen.
 const PAGES = ["/kube/lisenser.txt"];
-const ENTRY = "/kube/assets/index-jvJVXmuH.js";
+const ENTRY = "/kube/assets/index-CUA_AVvL.js";
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
