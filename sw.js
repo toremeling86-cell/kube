@@ -1,20 +1,33 @@
-/* Kube – service worker, versjon f5161ef9f90e */
+/* Kube – service worker, versjon ff989e3e122a */
 const BASE = "/kube/";
 // Navnet inneholder stien, så flere apper på samme domene (for eksempel github.io) ikke rydder hverandres lager.
 const PREFIX = 'kube:' + BASE + ':';
-const CACHE = PREFIX + 'f5161ef9f90e';
-const FILES = ["/kube/index.html","/kube/manifest.webmanifest","/kube/icons/icon-192.png","/kube/icons/icon-512.png","/kube/icons/maskable-192.png","/kube/icons/maskable-512.png","/kube/icons/apple-touch-icon.png","/kube/icons/favicon-32.png","/kube/assets/content-hC1cIh2m.js","/kube/assets/export-B0JRE-aI.js","/kube/assets/frame-QNmSArIH.js","/kube/assets/geometry-CP6ZNvHx.js","/kube/assets/grips-DBdVLpFn.js","/kube/assets/GuideApp-BucEO8Qc.js","/kube/assets/GuideApp-CevSmPIg.css","/kube/assets/hintClient-BirZzPVk.js","/kube/assets/i18n-BBYJwvOB.js","/kube/assets/index-D2kD6xZJ.css","/kube/assets/index-XNbdS3SN.js","/kube/assets/jetbrains-mono-latin-500-normal-BWZEU5yA.woff2","/kube/assets/jetbrains-mono-latin-ext-500-normal-Cut-4mMH.woff2","/kube/assets/keys-P4BZdBOr.js","/kube/assets/learn.worker-DTcHLQGD.js","/kube/assets/LearnScreen-DRe15b37.js","/kube/assets/LearnScreen-Hr_7sJqX.css","/kube/assets/nb-C-rXSiSe.js","/kube/assets/random-Cr-kaT8g.js","/kube/assets/react-9AyZgPdt.js","/kube/assets/runnerStore-C0e_grQA.js","/kube/assets/schibsted-grotesk-latin-500-normal-rf9C4Thp.woff2","/kube/assets/schibsted-grotesk-latin-600-normal-Czv9Obfv.woff2","/kube/assets/schibsted-grotesk-latin-700-normal-BkH0uJ1o.woff2","/kube/assets/schibsted-grotesk-latin-800-normal-CIaq-TR1.woff2","/kube/assets/schibsted-grotesk-latin-ext-500-normal-Ch1izu81.woff2","/kube/assets/schibsted-grotesk-latin-ext-600-normal-C5pQPdUJ.woff2","/kube/assets/schibsted-grotesk-latin-ext-700-normal-o210KhU4.woff2","/kube/assets/schibsted-grotesk-latin-ext-800-normal-CZWJQj-F.woff2","/kube/assets/scrambler.worker-UoTZYZdR.js","/kube/assets/solver-DVxg9S56.js","/kube/assets/terrain.worker-DowGO7GR.js","/kube/assets/three-C8ZfNx9M.js","/kube/assets/tid-day-CqNj3q3J.png","/kube/assets/tid-golden-DsFR0DS1.png","/kube/assets/tid-night-DvYxIBrg.png","/kube/assets/tid-sunrise-BXS5ctT_.png"];
+const CACHE = PREFIX + 'ff989e3e122a';
+const FILES = ["/kube/index.html","/kube/manifest.webmanifest","/kube/icons/icon-192.png","/kube/icons/maskable-192.png","/kube/icons/apple-touch-icon.png","/kube/icons/favicon-32.png","/kube/assets/gps-C3cPZ7Hs.css","/kube/assets/gps-oSuQmjJd.js","/kube/assets/GpsScreen-DEIzHQ0g.js","/kube/assets/index-BDjVztCY.js","/kube/assets/index-FI2lPcoO.css","/kube/assets/jetbrains-mono-latin-500-normal-BWZEU5yA.woff2","/kube/assets/jetbrains-mono-latin-ext-500-normal-Cut-4mMH.woff2","/kube/assets/react-CLsFr_3B.js","/kube/assets/rolldown-runtime-CbXtAM7H.js","/kube/assets/schibsted-grotesk-latin-500-normal-rf9C4Thp.woff2","/kube/assets/schibsted-grotesk-latin-600-normal-Czv9Obfv.woff2","/kube/assets/schibsted-grotesk-latin-700-normal-BkH0uJ1o.woff2","/kube/assets/schibsted-grotesk-latin-800-normal-CIaq-TR1.woff2","/kube/assets/schibsted-grotesk-latin-ext-500-normal-Ch1izu81.woff2","/kube/assets/schibsted-grotesk-latin-ext-600-normal-C5pQPdUJ.woff2","/kube/assets/schibsted-grotesk-latin-ext-700-normal-o210KhU4.woff2","/kube/assets/schibsted-grotesk-latin-ext-800-normal-CZWJQj-F.woff2","/kube/assets/scrambler.worker-UoTZYZdR.js","/kube/assets/ScrambleSheet-gEbqwU-v.js","/kube/assets/terrain.worker-DowGO7GR.js","/kube/assets/three-BQ3nXEv3.js","/kube/assets/tid-day-CqNj3q3J.png","/kube/assets/tid-golden-DsFR0DS1.png","/kube/assets/tid-night-DvYxIBrg.png","/kube/assets/tid-sunrise-BXS5ctT_.png"];
 // Sidene i bygget som ikke er appen (for eksempel personvern.html eller lisenser.txt), som stier i adressen.
 const PAGES = ["/kube/lisenser.txt"];
-const ENTRY = "/kube/assets/index-XNbdS3SN.js";
+const ENTRY = "/kube/assets/index-BDjVztCY.js";
+// Filene med innholdet i navnet.
+const ASSETS = BASE + 'assets/';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
-      // Forbi nettleserens HTTP-lager: en gammel index.html fra forrige versjon skal aldri havne her.
+      // Lagrene fra tidligere versjoner. Bare lagrene til denne appen (PREFIX): andre apper på samme domene har sine egne.
+      const older = (await caches.keys()).filter((k) => k.startsWith(PREFIX) && k !== CACHE);
+      const previous = async (url) => {
+        for (const name of older) {
+          const hit = await caches.match(url, { cacheName: name });
+          if (hit) return hit;
+        }
+        return null;
+      };
       const responses = await Promise.all(
         FILES.map(async (url) => {
-          const res = await fetch(new Request(url, { cache: 'reload' }));
+          const hashed = url.startsWith(ASSETS);
+          const kept = hashed ? await previous(url) : null;
+          if (kept) return [url, kept];
+          const res = await fetch(hashed ? new Request(url) : new Request(url, { cache: 'reload' }));
           if (!res.ok) throw new Error('Mangler ' + url + ' (' + res.status + ')');
           return [url, res];
         }),

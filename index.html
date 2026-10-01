@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="nb">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no, interactive-widget=resizes-content" />
     <meta name="theme-color" content="#0b0b0c" />
     <meta name="color-scheme" content="dark" />
-    <meta name="description" content="Kube – en 3D-puslekube som svever over et tåkehav. Vri lagene direkte med fingeren eller musa." />
+    <meta name="description" content="Learn to solve the cube, one step at a time. Then turn it freely, time your solves and keep your records." />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Kube" />
@@ -25,17 +25,24 @@
     <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./splash/splash-828x1792.png" />
     <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="./splash/splash-750x1334.png" />
     <title>Kube</title>
-    <style>html,body{background:#0b0b0c;height:100%;margin:0}</style>
-    <script type="module" crossorigin src="/kube/assets/index-XNbdS3SN.js"></script>
-    <link rel="modulepreload" crossorigin href="/kube/assets/random-Cr-kaT8g.js">
-    <link rel="modulepreload" crossorigin href="/kube/assets/react-9AyZgPdt.js">
-    <link rel="modulepreload" crossorigin href="/kube/assets/three-C8ZfNx9M.js">
-    <link rel="modulepreload" crossorigin href="/kube/assets/solver-DVxg9S56.js">
-    <link rel="modulepreload" crossorigin href="/kube/assets/keys-P4BZdBOr.js">
-    <link rel="stylesheet" crossorigin href="/kube/assets/index-D2kD6xZJ.css">
+    <!--
+      Sløret som dekker appen mens den starter: gradienten og ordmerket i systemskrift, med CSS rett her, så det står fra første bilde, før én eneste fil er lastet (den tekniske
+      revisjonen 01.10, funn 5c: første innhold kom etter 5,4 s på mobilnett, fordi ingenting kunne males før all JavaScript var kjørt). Det er det samme elementet hele tiden: appen løfter
+      det (`liftVeil`, src/ui/lib/veil.ts) ved å legge `is-gone` på det når kuben er tegnet, og grensen rundt appen gjør det samme når noe krasjer. Fargene er verdiene til tokenene
+      --kube-color-ground og --kube-color-veil og blekket til --kube-color-text (design-system/tokens.json; src/ui/veil.test.ts holder dem like), og ordmerket står på plassen til
+      `.scr-wordmark` i toppfeltet (56 px høyt, 52 liggende). Reglene står i kolonne 0, så testen finner dem.
+    -->
+    <style>html,body{background:#0b0b0c;height:100%;margin:0}.veil{z-index:20;pointer-events:none;background:radial-gradient(70% 60% at 50% 45%,#1d1c1a 0%,#0b0b0c 70%);transition:opacity .9s cubic-bezier(.16,1,.3,1),visibility 0s linear .9s;position:fixed;inset:0}.veil.is-gone{opacity:0;visibility:hidden;transition:opacity .75s cubic-bezier(.16,1,.3,1) .15s,visibility 0s linear .9s}.veil-mark{filter:opacity()}.veil.is-gone .veil-mark{filter:opacity(0);transition:filter .15s linear}.veil-mark{left:calc(4px + env(safe-area-inset-left,0px) + 14px);top:calc(env(safe-area-inset-top,0px) + 28px);letter-spacing:-.005em;color:#f3f1ec;opacity:.28;font:700 1.0625rem/1.5rem system-ui,-apple-system,Segoe UI,Roboto,sans-serif;animation:2.4s cubic-bezier(.2,.8,.2,1) infinite veil-breathe;position:absolute;transform:translateY(-50%)}.veil.is-gone .veil-mark{animation-play-state:paused}@media (height<=520px) and (aspect-ratio>=1){.veil-mark{top:calc(env(safe-area-inset-top,0px) + 26px)}}@media (prefers-reduced-motion:reduce){.veil-mark{opacity:.45;animation:none}}@keyframes veil-breathe{0%,to{opacity:.28}50%{opacity:.62}}</style>
+    <noscript><style>.veil{display:none}</style></noscript>
+    <script type="module" crossorigin src="/kube/assets/index-BDjVztCY.js"></script>
+    <link rel="modulepreload" crossorigin href="/kube/assets/rolldown-runtime-CbXtAM7H.js">
+    <link rel="modulepreload" crossorigin href="/kube/assets/react-CLsFr_3B.js">
+    <link rel="modulepreload" crossorigin href="/kube/assets/three-BQ3nXEv3.js">
+    <link rel="stylesheet" crossorigin href="/kube/assets/index-FI2lPcoO.css">
   </head>
   <body>
     <div id="root"></div>
-    <noscript><p style="color:#ECEAE4;font:16px system-ui;padding:24px">Kube trenger JavaScript. Slå det på, eller åpne siden i en annen nettleser.</p></noscript>
+    <div class="veil" id="veil" aria-hidden="true"><span class="veil-mark">Kube</span></div>
+    <noscript><p style="color:#ECEAE4;font:16px system-ui;padding:24px">Kube needs JavaScript. Turn it on, or open the page in another browser.</p></noscript>
   </body>
 </html>

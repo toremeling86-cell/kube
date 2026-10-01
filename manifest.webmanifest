@@ -2,8 +2,8 @@
   "id": "./",
   "name": "Kube",
   "short_name": "Kube",
-  "description": "En 3D-puslekube som svever over et tåkehav. Vri lagene direkte med fingeren.",
-  "lang": "nb",
+  "description": "Learn to solve the cube, one step at a time. Then turn it freely, time your solves and keep your records.",
+  "lang": "en",
   "start_url": "./",
   "scope": "./",
   "display": "fullscreen",
@@ -15,8 +15,8 @@
   "background_color": "#0b0b0c",
   "theme_color": "#0b0b0c",
   "categories": [
-    "games",
-    "entertainment"
+    "education",
+    "games"
   ],
   "icons": [
     {
@@ -46,9 +46,9 @@
   ],
   "shortcuts": [
     {
-      "name": "Stokk og løs",
-      "short_name": "Stokk",
-      "description": "Åpne Kube og stokk med en gang",
+      "name": "Scramble and solve",
+      "short_name": "Scramble",
+      "description": "Open Kube and scramble right away",
       "url": "./?stokk",
       "icons": [
         {
@@ -59,9 +59,9 @@
       ]
     },
     {
-      "name": "Dagens kube",
-      "short_name": "Dagens",
-      "description": "Samme stokking for alle i dag",
+      "name": "Today's cube",
+      "short_name": "Today",
+      "description": "The same scramble for everyone today",
       "url": "./?dagens",
       "icons": [
         {
@@ -72,9 +72,9 @@
       ]
     },
     {
-      "name": "Rekorder",
-      "short_name": "Rekorder",
-      "description": "Se tidene og rekordene dine",
+      "name": "Records",
+      "short_name": "Records",
+      "description": "See your times and records",
       "url": "./?rekorder",
       "icons": [
         {
@@ -91,14 +91,14 @@
       "sizes": "411x915",
       "type": "image/jpeg",
       "form_factor": "narrow",
-      "label": "Kuben over skyene i gyllen time"
+      "label": "The cube above the clouds at golden hour"
     },
     {
       "src": "screenshots/bred.jpg",
       "sizes": "1280x720",
       "type": "image/jpeg",
       "form_factor": "wide",
-      "label": "Kube på en stor skjerm"
+      "label": "Kube on a big screen"
     }
   ]
 }
