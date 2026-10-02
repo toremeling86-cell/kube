@@ -1,12 +1,12 @@
-/* Kube – service worker, versjon ff989e3e122a */
+/* Kube – service worker, versjon 4fc568b43a01 */
 const BASE = "/kube/";
 // Navnet inneholder stien, så flere apper på samme domene (for eksempel github.io) ikke rydder hverandres lager.
 const PREFIX = 'kube:' + BASE + ':';
-const CACHE = PREFIX + 'ff989e3e122a';
-const FILES = ["/kube/index.html","/kube/manifest.webmanifest","/kube/icons/icon-192.png","/kube/icons/maskable-192.png","/kube/icons/apple-touch-icon.png","/kube/icons/favicon-32.png","/kube/assets/gps-C3cPZ7Hs.css","/kube/assets/gps-oSuQmjJd.js","/kube/assets/GpsScreen-DEIzHQ0g.js","/kube/assets/index-BDjVztCY.js","/kube/assets/index-FI2lPcoO.css","/kube/assets/jetbrains-mono-latin-500-normal-BWZEU5yA.woff2","/kube/assets/jetbrains-mono-latin-ext-500-normal-Cut-4mMH.woff2","/kube/assets/react-CLsFr_3B.js","/kube/assets/rolldown-runtime-CbXtAM7H.js","/kube/assets/schibsted-grotesk-latin-500-normal-rf9C4Thp.woff2","/kube/assets/schibsted-grotesk-latin-600-normal-Czv9Obfv.woff2","/kube/assets/schibsted-grotesk-latin-700-normal-BkH0uJ1o.woff2","/kube/assets/schibsted-grotesk-latin-800-normal-CIaq-TR1.woff2","/kube/assets/schibsted-grotesk-latin-ext-500-normal-Ch1izu81.woff2","/kube/assets/schibsted-grotesk-latin-ext-600-normal-C5pQPdUJ.woff2","/kube/assets/schibsted-grotesk-latin-ext-700-normal-o210KhU4.woff2","/kube/assets/schibsted-grotesk-latin-ext-800-normal-CZWJQj-F.woff2","/kube/assets/scrambler.worker-UoTZYZdR.js","/kube/assets/ScrambleSheet-gEbqwU-v.js","/kube/assets/terrain.worker-DowGO7GR.js","/kube/assets/three-BQ3nXEv3.js","/kube/assets/tid-day-CqNj3q3J.png","/kube/assets/tid-golden-DsFR0DS1.png","/kube/assets/tid-night-DvYxIBrg.png","/kube/assets/tid-sunrise-BXS5ctT_.png"];
+const CACHE = PREFIX + '4fc568b43a01';
+const FILES = ["/kube/index.html","/kube/manifest.webmanifest","/kube/icons/icon-192.png","/kube/icons/maskable-192.png","/kube/icons/apple-touch-icon.png","/kube/icons/favicon-32.png","/kube/assets/gps-DPyGrgFr.js","/kube/assets/gps-kRpd-Wlw.css","/kube/assets/GpsScreen-Ca_E3XLY.js","/kube/assets/index-DlrdNtAA.css","/kube/assets/index-nzbDtiDy.js","/kube/assets/jetbrains-mono-latin-500-normal-BWZEU5yA.woff2","/kube/assets/jetbrains-mono-latin-ext-500-normal-Cut-4mMH.woff2","/kube/assets/react-CLsFr_3B.js","/kube/assets/rolldown-runtime-CbXtAM7H.js","/kube/assets/schibsted-grotesk-latin-500-normal-rf9C4Thp.woff2","/kube/assets/schibsted-grotesk-latin-600-normal-Czv9Obfv.woff2","/kube/assets/schibsted-grotesk-latin-700-normal-BkH0uJ1o.woff2","/kube/assets/schibsted-grotesk-latin-800-normal-CIaq-TR1.woff2","/kube/assets/schibsted-grotesk-latin-ext-500-normal-Ch1izu81.woff2","/kube/assets/schibsted-grotesk-latin-ext-600-normal-C5pQPdUJ.woff2","/kube/assets/schibsted-grotesk-latin-ext-700-normal-o210KhU4.woff2","/kube/assets/schibsted-grotesk-latin-ext-800-normal-CZWJQj-F.woff2","/kube/assets/scrambler.worker-UoTZYZdR.js","/kube/assets/ScrambleSheet-C1Lmpp0u.js","/kube/assets/terrain.worker-CWyvrRRt.js","/kube/assets/three-Dc7jSRR0.js"];
 // Sidene i bygget som ikke er appen (for eksempel personvern.html eller lisenser.txt), som stier i adressen.
 const PAGES = ["/kube/lisenser.txt"];
-const ENTRY = "/kube/assets/index-BDjVztCY.js";
+const ENTRY = "/kube/assets/index-nzbDtiDy.js";
 // Filene med innholdet i navnet.
 const ASSETS = BASE + 'assets/';
 
