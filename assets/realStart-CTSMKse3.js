@@ -1,1 +1,0 @@
-var e=null,t=()=>e!==null;function n(t){e=t.clone()}function r(){let t=e;return e=null,t}var i=!1,a=()=>i;function o(){i=!0,e=null}function s(){let e=i;return i=!1,e}export{r as a,o as i,a as n,s as o,n as r,t};
