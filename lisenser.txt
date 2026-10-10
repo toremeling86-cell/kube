@@ -1,6 +1,6 @@
-Kube bruker disse bibliotekene, skriftene og symbolene. Takk til alle som har laget dem.
+Kubelo bruker disse bibliotekene, skriftene og symbolene. Takk til alle som har laget dem.
 
-Kube uses the following libraries, fonts and symbols. Thanks to everyone who made them.
+Kubelo uses the following libraries, fonts and symbols. Thanks to everyone who made them.
 
 ========================================================================
 three 0.186.0 — MIT

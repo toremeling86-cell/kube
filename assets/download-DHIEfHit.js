@@ -1,0 +1,1 @@
+function e(e,t,n){try{let r=URL.createObjectURL(new Blob([e],{type:n})),i=document.createElement(`a`);return i.href=r,i.download=t,i.style.display=`none`,document.body.append(i),i.click(),i.remove(),window.setTimeout(()=>URL.revokeObjectURL(r),3e4),!0}catch{return!1}}export{e as t};

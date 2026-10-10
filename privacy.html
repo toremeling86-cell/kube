@@ -6,8 +6,8 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
-<meta name="description" content="Privacy policy for [APP NAME]. No account, no ads, no analytics and no tracking. Everything is stored only on your device.">
-<title>Privacy policy – [APP NAME]</title>
+<meta name="description" content="Privacy policy for Kubelo. No account, no ads, no analytics and no tracking. Everything is stored only on your device.">
+<title>Privacy policy – Kubelo</title>
 <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
 <style>
 :root {
@@ -59,7 +59,6 @@ strong { font-weight: 600; }
 .updated { color: var(--muted); margin: 0 0 2em; }
 .short { border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px 6px; background: var(--panel); }
 .short h2 { margin-top: 0; font-size: 1.0625rem; }
-.ph { border-bottom: 1px dashed currentColor; white-space: nowrap; font-weight: 600; }
 code { font-family: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 0.8125em; overflow-wrap: anywhere; }
 .keys code { display: inline-block; padding: 0 0.3em; margin: 0.1em 0.15em 0.1em 0; border-radius: 5px; background: var(--panel); }
 table { width: 100%; border-collapse: collapse; margin: 0 0 1.4em; font-size: 0.9688rem; line-height: 1.5; }
@@ -90,17 +89,17 @@ td:last-child { width: 19%; }
 <body>
 <main>
 <div class="top">
-  <span class="name">[APP NAME]</span>
+  <span class="name">Kubelo</span>
   <a href="./">Back to the app</a>
 </div>
 
 <h1>Privacy policy</h1>
-<p class="updated">Last updated: <span class="ph">[DATE]</span></p>
+<p class="updated">Last updated: 10 October 2026</p>
 
 <section class="short" aria-labelledby="short">
   <h2 id="short">In short</h2>
   <ul>
-    <li>[APP NAME] has <strong>no account, no ads, no analytics and no tracking</strong>.</li>
+    <li>Kubelo has <strong>no account, no ads, no analytics and no tracking</strong>.</li>
     <li>Everything you do in the app is stored <strong>only on your device</strong>: your times, records, guide progress, settings and cubes. We receive nothing.</li>
     <li><strong>The camera is used only to read the colours of your own cube.</strong> The camera pictures are read in memory. They are never saved and never sent anywhere.</li>
     <li>You can delete everything at any time with <strong>Delete all data</strong>.</li>
@@ -109,10 +108,10 @@ td:last-child { width: 19%; }
 </section>
 
 <h2>Who is responsible</h2>
-<p>[APP NAME] is made by <span class="ph">[CONTACT]</span>, who is the data controller. If you have questions about privacy, use the contact details above.</p>
+<p>Kubelo is made by Tore Meling (Norway), who is the data controller. If you have questions about privacy, write to us in the app (⋯ → Settings → About Kubelo → Write to us).</p>
 
 <h2>Camera</h2>
-<p>[APP NAME] can use your phone's camera to read the colours of your own cube, so the guide can help you solve it.</p>
+<p>Kubelo can use your phone's camera to read the colours of your own cube, so the guide can help you solve it.</p>
 <ul>
   <li><strong>When the camera is used:</strong>
     <ul>
@@ -129,7 +128,7 @@ td:last-child { width: 19%; }
 </ul>
 
 <h2>What is stored on your device</h2>
-<p>[APP NAME] keeps its data in your browser's storage on your device, tied to this website. If you install the app from Google Play, it opens full screen in your browser, usually Chrome, and the data is kept in the browser's storage on your phone. The names in the "Stored as" column are the storage keys, so you can check them in your browser's developer tools.</p>
+<p>Kubelo keeps its data in your browser's storage on your device, tied to this website. If you install the app from Google Play, it opens full screen in your browser, usually Chrome, and the data is kept in the browser's storage on your phone. The names in the "Stored as" column are the storage keys, so you can check them in your browser's developer tools.</p>
 <table>
   <thead>
     <tr><th scope="col">What</th><th scope="col">Contents</th><th scope="col">Stored as</th><th scope="col">Why</th></tr>
@@ -137,7 +136,7 @@ td:last-child { width: 19%; }
   <tbody>
     <tr>
       <th scope="row">Your solves</th>
-      <td data-label="Contents">Time, number of moves, when the solve was completed, the scramble, any penalty (+2 or DNF), whether inspection was on, whether Help was used, whether you solved on the screen or with a real cube, and the date if it was the daily cube.</td>
+      <td data-label="Contents">Time, number of moves, when the solve was completed, how the cube was mixed, any penalty (+2 or DNF), whether inspection was on, whether Help was used, whether you solved on the screen or with a real cube, and the date if it was the daily cube.</td>
       <td class="keys" data-label="Stored as"><code>kube.solves.v1</code></td>
       <td data-label="Why">Records and statistics.</td>
     </tr>
@@ -196,6 +195,18 @@ td:last-child { width: 19%; }
       <td data-label="Why">So the scan opens the same camera.</td>
     </tr>
     <tr>
+      <th scope="row">Saved cubes</th>
+      <td data-label="Contents">Cubes you saved to use again or send to a friend: the moves, the date and a short name if you gave one. For a cube a friend sent you, also the first name and the time that came in the link. At most 50. A cube you share as a link is only in the link, not stored here.</td>
+      <td class="keys" data-label="Stored as"><code>kube.scrambles.v1</code></td>
+      <td data-label="Why">So you can use the same cube again, and see your time next to your friend's.</td>
+    </tr>
+    <tr>
+      <th scope="row">Your first name for a challenge</th>
+      <td data-label="Contents">A first name, only if you choose to give one when you send a challenge link. It is kept on your phone, and leaves it only when you send a link yourself: the link then holds the cube, your time and this name. Without it, your friend sees &ldquo;Your friend&rdquo;.</td>
+      <td class="keys" data-label="Stored as"><code>kube.duel.name.v1</code></td>
+      <td data-label="Why">So your friend knows who the link is from.</td>
+    </tr>
+    <tr>
       <th scope="row">Error log</th>
       <td data-label="Contents">The last 20 technical errors in the app: the error message, where in the code it happened (a stack trace), the app version and the time.</td>
       <td class="keys" data-label="Stored as"><code>kube.errors.v1</code></td>
@@ -209,9 +220,15 @@ td:last-child { width: 19%; }
     </tr>
     <tr>
       <th scope="row">Temporary</th>
-      <td data-label="Contents">When the graphics last failed, whether simpler graphics was chosen, a language chosen by a link, and the zoom level. Deleted when you close the app.</td>
-      <td class="keys" data-label="Stored as"><code>kube.lost</code> <code>kube.graphics</code> <code>kube.learn.lang</code> <code>kube.session.zoom</code></td>
+      <td data-label="Contents">When the graphics last failed, whether simpler graphics was chosen, a language chosen by a link, the zoom level, and whether the app was opened from Google Play. Deleted when you close the app.</td>
+      <td class="keys" data-label="Stored as"><code>kube.lost</code> <code>kube.graphics</code> <code>kube.learn.lang</code> <code>kube.session.zoom</code> <code>kube.play</code></td>
       <td data-label="Why">So the app does not restart in a loop, and keeps your choices while it is open.</td>
+    </tr>
+    <tr>
+      <th scope="row">Replays of your solves</th>
+      <td data-label="Contents">The moves of each solve you did on the screen, and when you made each move, so a solve can be played back on the cube. Only your best solve and your first solve for each size are kept for good; of the rest, the latest 300. A replay is deleted when you delete its solve. Solves with a real cube have none.</td>
+      <td class="keys" data-label="Stored as"><code>kube-replays</code> (IndexedDB)</td>
+      <td data-label="Why">So Records can play back your best solve. Replays are not part of a backup.</td>
     </tr>
     <tr>
       <th scope="row">Landscape cache</th>
@@ -227,12 +244,12 @@ td:last-child { width: 19%; }
     </tr>
   </tbody>
 </table>
-<p>[APP NAME] does not store your name, e-mail address, phone number, location, photos or any other contact details.</p>
+<p>Kubelo does not store your name, e-mail address, phone number, location, photos or any other contact details.</p>
 <p>The app asks the browser for persistent storage so that your data is not deleted when the device runs low on space. The browser may answer without asking you.</p>
 
 <h2>What is sent from your device</h2>
-<p>[APP NAME] sends no information about you or how you use it off your device. We receive neither your times, your settings, your cube, the camera pictures nor anything else you do in the app.</p>
-<p>When you open the app for the first time, and when it checks for a new version, your device downloads the app's files from this website. The website is hosted by <span class="ph">[HOSTING PROVIDER]</span>.</p>
+<p>Kubelo sends no information about you or how you use it off your device. We receive neither your times, your settings, your cube, the camera pictures nor anything else you do in the app.</p>
+<p>When you open the app for the first time, and when it checks for a new version, your device downloads the app's files from this website. The website is hosted by GitHub Pages (GitHub, Inc.).</p>
 <ul>
   <li>As with any visit to a website, the host sees your IP address and the technical information your browser sends, such as the browser type. The host may keep this for a short time in logs for operations and security.</li>
   <li>We do not use these logs and do not combine them with any other information. The host's own privacy policy applies.</li>
@@ -245,24 +262,25 @@ td:last-child { width: 19%; }
 <ul>
   <li><strong>Challenge someone</strong> on the daily cube, and <strong>Share</strong> or <strong>Challenge</strong> on a solve, open your phone's share menu. The text contains the cube size, your time and sometimes the number of moves or the date. The link goes to the app. You choose where it goes. Without a share menu, the text is copied to the clipboard.</li>
   <li><strong>Share</strong> when you have solved the cube in the guide shares a short text with your time, without a link.</li>
-  <li><strong>Copy</strong> on a solve in Records copies its scramble to the clipboard.</li>
+  <li><strong>Copy</strong> on a solve in Records copies how it was mixed to the clipboard.</li>
   <li><strong>Export CSV</strong> in Records saves your solves for one size as a file on your device.</li>
-  <li><strong>Save a backup</strong> (… → Settings → Your data) saves a file to your Downloads. It holds your solves, settings, cubes in progress, guide progress and lessons, and whether the introduction has been seen. It is not encrypted, so keep it like any other private file. You decide where it goes. The app never uploads it.</li>
+  <li><strong>Save a backup</strong> (… → Settings → Your data) saves a file to your Downloads. It holds your solves, settings, cubes in progress, guide progress and lessons, and whether the introduction has been seen. Replays of your solves are not included. It is not encrypted, so keep it like any other private file. You decide where it goes. The app never uploads it.</li>
   <li><strong>Restore from a file</strong> reads a file you choose, only on your device.</li>
-  <li><strong>Copy</strong> in the error log (… → Settings → About) copies the technical errors to the clipboard, so you can send them to us if you want to.</li>
+  <li><strong>Copy</strong> in the error log (… → Settings → About Kubelo) copies the technical errors to the clipboard, so you can send them to us if you want to.</li>
+  <li><strong>Send feedback</strong> (… → Settings → About Kubelo → Write to us) opens your own email app with a ready text: the subject, the app version and whether the scanner was used in this session. You see everything before it is sent and can delete any of it. If you send feedback, it goes from your own email app. Kubelo itself sends nothing. <strong>Rate</strong> (only in the app from Google Play) opens the app's page in Google Play.</li>
 </ul>
 
 <h2>Other permissions</h2>
-<p>Apart from the camera, [APP NAME] does not ask for microphone, location, contacts or notifications, and it only reads files you choose yourself. Sound is generated in the app. Vibration can be turned off in the settings. While you solve, the app keeps the screen awake.</p>
+<p>Apart from the camera, Kubelo does not ask for microphone, location, contacts or notifications, and it only reads files you choose yourself. Sound is generated in the app. Vibration can be turned off in the settings. While you solve, the app keeps the screen awake.</p>
 
 <h2>Children</h2>
-<p>Children can use [APP NAME]. The app has no account, no chat, no ads and no purchases. It collects no personal data from anyone, including children. This also applies to the camera: the pictures are only read on the phone and are never saved or sent.</p>
+<p>Children can use Kubelo. The app has no account, no chat, no ads and no purchases. It collects no personal data from anyone, including children. This also applies to the camera: the pictures are only read on the phone and are never saved or sent.</p>
 
 <h2>How long data is kept, and how to delete it</h2>
 <p>Your data stays on your device until you delete it. The browser may also delete it by itself if the device runs low on space and persistent storage has not been granted.</p>
 <ul>
-  <li><strong>Solves:</strong> In Records you can delete solves one by one, or delete all solves for a size.</li>
-  <li><strong>Everything in the app:</strong> Choose … → Settings → Your data → <strong>Delete all data</strong>. This deletes everything in the table above from your device: your times and records, guide progress, lessons, saved cubes, settings, camera choice, error log and the landscape cache. The app starts again as new, on the home screen. The app's own files stay, so it still works offline.</li>
+  <li><strong>Solves:</strong> In Records you can delete solves one by one, or delete all solves for a size. This also deletes their replays.</li>
+  <li><strong>Everything in the app:</strong> Choose … → Settings → Your data → <strong>Delete all data</strong>. This deletes everything in the table above from your device: your times and records, guide progress, lessons, saved cubes, settings, camera choice, error log, the replays of your solves and the landscape cache. The app starts again as new, on the home screen. The app's own files stay, so it still works offline.</li>
   <li><strong>Everything on an Android phone:</strong> Touch and hold the app icon, choose "Site settings" and delete the data. You can also go to your browser's settings, Site settings, All sites, find this website and delete the data there. This also removes the camera permission.</li>
   <li><strong>Everything in a browser:</strong> Delete the site data for this website in your browser's settings.</li>
   <li><strong>Note:</strong> Uninstalling the app does not necessarily delete the data, because it is kept in the browser. Save a backup first if you want to keep it.</li>
@@ -274,13 +292,13 @@ td:last-child { width: 19%; }
 
 <h2>Your rights</h2>
 <p>Under the GDPR you have the right of access, rectification, erasure, restriction and data portability, and the right to object. We hold no information about you, so we have nothing to show or delete. Everything is kept by you and can be deleted as described above.</p>
-<p>You can still ask us at any time, using the contact details above. We reply within one month. You can also complain to the Norwegian Data Protection Authority, Datatilsynet (datatilsynet.no).</p>
+<p>You can still ask us at any time, by writing to us in the app (see Contact below). We reply within one month. You can also complain to the Norwegian Data Protection Authority, Datatilsynet (datatilsynet.no).</p>
 
 <h2>Changes</h2>
 <p>When the app changes, we update this policy and the date at the top. If the app will later send information off your device, for example for an account, you will be told in the app before the change takes effect.</p>
 
 <h2>Contact</h2>
-<p><span class="ph">[CONTACT]</span></p>
+<p>Write to us in the app: open the ⋯ menu, then Settings → About Kubelo → Write to us. We reply within one month.</p>
 
 <p class="foot">This page works without the app and without a network connection once the app has been opened.</p>
 </main>

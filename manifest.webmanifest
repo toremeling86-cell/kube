@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "Kube",
-  "short_name": "Kube",
-  "description": "Learn to solve the cube, one step at a time. Then turn it freely, time your solves and keep your records.",
+  "name": "Kubelo",
+  "short_name": "Kubelo",
+  "description": "Scan your real 3x3 cube and solve it step by step. Calm play, timer and duels.",
   "lang": "en",
   "start_url": "./",
   "scope": "./",
@@ -42,13 +42,19 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "icons/monochrome-432.png",
+      "sizes": "432x432",
+      "type": "image/png",
+      "purpose": "monochrome"
     }
   ],
   "shortcuts": [
     {
       "name": "Scramble and solve",
       "short_name": "Scramble",
-      "description": "Open Kube and scramble right away",
+      "description": "Open Kubelo and scramble right away",
       "url": "./?stokk",
       "icons": [
         {
@@ -61,7 +67,7 @@
     {
       "name": "Today's cube",
       "short_name": "Today",
-      "description": "The same scramble for everyone today",
+      "description": "Everyone gets the same cube today",
       "url": "./?dagens",
       "icons": [
         {
@@ -91,14 +97,14 @@
       "sizes": "411x915",
       "type": "image/jpeg",
       "form_factor": "narrow",
-      "label": "The cube above the clouds at golden hour"
+      "label": "Play with Help: the cube shows the turn, with arrows and move letters to copy it"
     },
     {
       "src": "screenshots/bred.jpg",
       "sizes": "1280x720",
       "type": "image/jpeg",
       "form_factor": "wide",
-      "label": "Kube on a big screen"
+      "label": "Kubelo on a big screen, above the clouds"
     }
   ]
 }
