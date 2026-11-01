@@ -382,3 +382,35 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+========================================================================
+List of Dirty, Naughty, Obscene, and Otherwise Bad Words (LDNOOBW) — Creative Commons Attribution 4.0 International (CC BY 4.0)
+========================================================================
+
+Source: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
+License: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
+Changes: Copied as TypeScript data; entries with emoji were left out. Kubelo adds its own list of slurs and an allow list.
+The lists keep rude names off the leaderboard. The authors of the lists do not endorse Kubelo.
+
+========================================================================
+Earth imagery (the "Above the Earth" view)
+========================================================================
+
+Blue Marble Next Generation, "Base Map" (day)
+Source: https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/
+Credit: NASA Earth Observatory. NASA image courtesy Reto Stöckli and Robert Simmon.
+
+Black Marble 2016 (city lights at night)
+Source: https://science.nasa.gov/earth/earth-observatory/earth-at-night/maps/
+Credit: NASA Earth Observatory images by Joshua Stevens, using Suomi NPP VIIRS data from Miguel Román, NASA GSFC.
+
+Blue Marble (2002), "Clouds"
+Source: https://science.nasa.gov/earth/earth-observatory/the-blue-marble-true-color-global-imagery-at-1km-resolution/
+Credit: NASA Goddard Space Flight Center Image by Reto Stöckli (land surface, shallow water, clouds). Enhancements by Robert Simmon (ocean color, compositing, 3D globes, animation).
+
+Natural Earth 1:10m land and lakes (the water mask for sun glint)
+Source: https://www.naturalearthdata.com/about/terms-of-use/
+Credit: Made with Natural Earth. Public domain: no permission is needed.
+
+NASA should be acknowledged as the source of the material. Use does not imply NASA's endorsement of Kubelo.
+NASA media usage guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/
