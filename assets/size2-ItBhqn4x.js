@@ -1,0 +1,1 @@
+import{Ut as e}from"./index-C_Fcvmiq.js";import{r as t}from"./debug-e29s2OK3.js";var n=()=>e()&&t(`size2`)!==null;export{n as t};
