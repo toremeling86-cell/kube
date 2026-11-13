@@ -1,0 +1,1 @@
+import{Wt as e}from"./index-D7AoJIDe.js";import{r as t}from"./debug-e29s2OK3.js";var n=()=>e()&&t(`board2`)!==``;export{n as t};
