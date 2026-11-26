@@ -1,0 +1,1 @@
+import{An as e,jn as t}from"./index-Br2latd4.js";import{i as n}from"./scrambles-CFQBLs0M.js";function r(r,i){let a=n(i);if(!a)return null;let o=null;for(let i of r){if(i.size!==3||!e(i)||n(i.scramble)!==a)continue;let r=t(i);Number.isFinite(r)&&(o===null||r<o)&&(o=r)}return o}export{r as t};
